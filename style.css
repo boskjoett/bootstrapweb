@@ -5,6 +5,10 @@ body {
 
 .panel {
   background-color: #40434a;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 10px;
+  border-color: #212529;
 }
 
 .zylinc-orange {
