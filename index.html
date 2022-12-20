@@ -161,7 +161,13 @@
           value: 70,
           type: "indicator",
           mode: "gauge+number",
-          gauge: { axis: { range: [null, 100] } }
+          gauge: { 
+            axis: { 
+              range: [null, 100],
+              tickcolor: "#fff"
+            },
+            bordercolor: "gray"
+          }
         }
       ];
 
@@ -170,6 +176,7 @@
         margin: { l: 40, b: 0, t: 0, r: 40 }, 
         paper_bgcolor: "#40434a",
         font: { color: "#fff" },
+        axis: { tickcolor: "#fff" },
         coloraxis: { colorbar: { tickcolor: "#fff" } }
       };
       Plotly.newPlot('serviceLevelGauge', data, layout);
